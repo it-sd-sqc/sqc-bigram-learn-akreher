@@ -60,5 +60,42 @@ class MainTest {
     );
   }
 
-  // TODO: Create your test(s) below. /////////////////////////////////////////
+    // TODO: Create your test(s) below. /////////////////////////////////////////
+    @Test
+void getId(){
+      Connection db = Main.createConnection();
+      Main main = new Main();
+      assertDoesNotThrow(
+              () ->{
+                  main.reset();
+                  int wordCount = main.getWordCount(db);
+                  main.getId(db,"Hello my name is");
+                  assertTrue(wordCount > 0);
+                  db.close();
+              }
+      );
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

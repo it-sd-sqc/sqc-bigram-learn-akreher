@@ -33,7 +33,7 @@ public class Main {
           System.out.println(DESCRIPTION);
           System.out.println("""
               Usage:
-                java edu.cvtc.bigram.Main file […file]
+                java edu.cvtc.bigram.Main file […file]AC
               Arguments:
                 --version, -v
                   Displays the version number and exits.
