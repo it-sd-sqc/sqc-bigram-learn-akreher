@@ -70,7 +70,7 @@ void getId(){
                   main.reset();
                   int wordCount = main.getWordCount(db);
                   main.getId(db,"Hello my name is");
-                  assertTrue(wordCount > 0);
+                  assertTrue(wordCount > 1);
                   db.close();
               }
       );
